@@ -44,8 +44,6 @@ function urlB64ToUint8Array(base64String) {
 }
 
 console.log(`is serviceWorker running ${'serviceWorker' in navigator}`)
-console.log(`is pushManager running ${'PushManager' in window}`)
-console.log(`is pushManager running ${'PushManager' in window.safari}`)
 if ('serviceWorker' in navigator && ('PushManager' in window || 'PushManager' in window.safari)) {
   console.log('Service Worker and Push are supported');
 
